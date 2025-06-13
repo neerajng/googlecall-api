@@ -86,4 +86,19 @@ googleAuthRouter.get("/callback/:service", async (req: Request, res: Response) =
   }
 });
 
+googleAuthRouter.get("/logout", async (req: Request, res: Response) => {
+  try {
+    res.clearCookie('AUTHORIZATION', {
+      path: '/',
+      domain: 'localhost', // optional
+      httpOnly: true,
+    });
+    return res.redirect(process.env.ALLOWED_ORIGIN!);  
+  } catch (error) {
+    console.error(error);
+    Utils.ApiResponse.error(res, error);
+  }
+});
+
+
 export default googleAuthRouter;
