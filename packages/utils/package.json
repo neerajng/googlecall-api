@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "jsonwebtoken": "^9.0.2",
-    "node-cron": "^4.1.0"
+    "node-cron": "^4.1.0",
+    "twilio": "^5.7.1"
   }
 }
