@@ -1,0 +1,24 @@
+{
+  "name": "@googlecall/utils",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "tsc-watch": "^7.1.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^4.1.0"
+  }
+}
