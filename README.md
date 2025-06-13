@@ -54,6 +54,7 @@ Create a `.env` file in the root directory with the following variables:
 - Node.js
 - ESLint & Prettier for code formatting
 - Workspaces for monorepo management
+- Express.js
 
 ## Contributing
 
